@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AppAreas" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/primary_dark</item>
+
+        <!-- Global Button Style -->
+        <item name="materialButtonStyle">@style/Widget.AppAreas.Button</item>
+    </style>
+
+    <style name="Theme.AppAreas" parent="Base.Theme.AppAreas" />
+
+    <style name="Widget.AppAreas.Button" parent="Widget.Material3.Button">
+        <item name="android:insetTop">4dp</item>
+        <item name="android:insetBottom">4dp</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.AppAreas.MediumComponent</item>
+        <item name="backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="ShapeAppearance.AppAreas.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

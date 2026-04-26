@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="0dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/logoapp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/anton"
+                android:text="GeoCalc"
+                android:textColor="@color/primary"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcule áreas rapidamente"
+                android:textColor="#666666"
+                android:textSize="18sp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <androidx.constraintlayout.helper.widget.Flow
+                android:id="@+id/flowButtons"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="24dp"
+                app:constraint_referenced_ids="btnQuadrado,btnTriangulo,btnCirculo2,btnRetangulo2,btnTrapezio,btnLosango"
+                app:flow_horizontalGap="16dp"
+                app:flow_maxElementsWrap="2"
+                app:flow_verticalGap="16dp"
+                app:flow_wrapMode="aligned"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subTitle"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Button
+                android:id="@+id/btnQuadrado"
+                style="@style/Widget.AppAreas.Button"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:text="🟩\nQuadrado"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnTriangulo"
+                style="@style/Widget.AppAreas.Button"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:text="🔺\nTriângulo"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnCirculo2"
+                style="@style/Widget.AppAreas.Button"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:text="🟡\nCírculo"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnRetangulo2"
+                style="@style/Widget.AppAreas.Button"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:text="▭\nRetângulo"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnTrapezio"
+                style="@style/Widget.AppAreas.Button"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:text="⏢\nTrapézio"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnLosango"
+                style="@style/Widget.AppAreas.Button"
+                android:layout_width="0dp"
+                android:layout_height="110dp"
+                android:text="🔷\nLosango"
+                android:textSize="16sp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
