@@ -84,7 +84,7 @@ Este projeto foi criado com foco em:
 
 ## 📸 Preview
 
-<img width="357" alt="image" src="https://github.com/user-attachments/assets/1d0e85c9-3844-4924-972e-4578446630f4" />
+<img width="337" height="626" alt="image" src="https://github.com/user-attachments/assets/017e2ef9-8b6b-46a2-be40-51a0f5477b96" />
 
 ---
 
